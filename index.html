@@ -39,7 +39,7 @@
             <input type="text" oninput="adjektiv.Ord16 = this.value" value="${adjektiv.Ord16}"/>
             <input type="text" onchange="erHistorieKlar()" oninput="adjektiv.Ord17 = this.value" value="${adjektiv.Ord17}"/>
             <br>
-            <button ${laasKnapp} onclick="submitHistorie()">Få historie</button>
+            <button ${laasKnapp} onclick="fåHistorie()">Få historie</button>
             `;
         }
         
@@ -123,10 +123,6 @@
             } else {
                 return;
             }
-        }
-
-        function submitHistorie(){
-            fåHistorie();
         }
         updateView();
     </script>
