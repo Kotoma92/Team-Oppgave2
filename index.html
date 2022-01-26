@@ -45,10 +45,10 @@
         
         function fåHistorie() {
             document.getElementById("app").innerHTML =/*html*/`
-            <div id="histore1"> Det var en gang Geir og Eskil pratet om hvor utrolig <b>${adjektiv.Ord1}</b> Therese var.<br>
-            Men Therese var lei. Hun var lei av all den <b>${adjektiv.Ord2}</b> mobbingen.<br> Så Therese spurte Linn:
-            Hva skal jeg gjøre nå med Geir og Eskil? <br>Linn foreslo at Erlend kunne banke opp Geir og Eskil,
-            men det var ikke Therese enig i.
+            <div> Det var en gang Geir og Eskil pratet om hvor utrolig <b>${adjektiv.Ord1}</b> Therese var.<br>
+            <div>Men Therese var lei. Hun var lei av all den <b>${adjektiv.Ord2}</b> mobbingen.</div><br> 
+            <div>Så Therese spurte Linn: "Hva skal jeg gjøre nå med Geir og Eskil?"</div><br>
+            <div>Linn foreslo at Erlend kunne banke opp Geir og Eskil, men det var ikke Therese enig i.</div>
             <br><button onclick="historieTo()">Neste side</button>
             `;
         }
@@ -57,7 +57,7 @@
             document.getElementById("app").innerHTML =/*html*/`
             <div>Plutselig kommer Therese med en <b>${adjektiv.Ord3}</b> ide. Hva med en <b>${adjektiv.Ord4}</b> grov vits. 
             Det ville jo lette på den <b>${adjektiv.Ord5}</b> stemmingen</div><br/>
-            <div>Dette syntes Linn og Erlend en <b>${adjektiv.Ord6}</b> god ide.</div><br>
+            <div>Dette syntes Linn og Erlend var en <b>${adjektiv.Ord6}</b> god ide.</div><br>
             <button onclick="historieTre()">Neste side</button>
             `;
         }
@@ -82,7 +82,7 @@
 
         function historieFem() {
             document.getElementById("app").innerHTML =/*html*/`
-            <div>Da ender den <b>${adjektiv.Ord15}</b> Terje hele historien med å kode å si: <h1> Bli fred </h1>
+            <div>Da ender den <b>${adjektiv.Ord15}</b> Terje hele historien med å kode og si: <h1> Bli fred </h1>
             Og det ble fred og en lykkelig skolegang for alle sammen og alle de <b>${adjektiv.Ord16}</b> menneskene ble <b>${adjektiv.Ord17}</b>
             og gode venner igjen. </div><br>
             <button onclick="window.location.reload()">Resett historie</button>
