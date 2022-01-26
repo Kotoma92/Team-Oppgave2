@@ -14,6 +14,8 @@
 
         //View
         //I viewet så ligger alle adjektivhistoriene, når man påkaller f.eks "historieTre()" så fjernes alt i innerHTML og legger inn ny HTML kode fra funksjonen
+        //"oninput="adjektiv.Ord1 = this.value" henter verdien som er skrevet inn i input
+        //For at verdien i input skal vises når en updateView() skjer må input ha "value="${adjektiv.Ord1}"" for å vise verdien som er satt inn
         
         function updateView() {
             document.getElementById("app").innerHTML =/*html*/`
@@ -62,7 +64,7 @@
 
         function historieTre() {
             document.getElementById("app").innerHTML =/*html*/`
-            <div>Plutselig var the Chorei og Therese var klar for å komme med en <b>${adjektiv.Ord7}</b> grov vits.</div><br>
+            <div>Plutselig var det Chorei og Therese var klar for å komme med en <b>${adjektiv.Ord7}</b> grov vits.</div><br>
             <div>Benjamin ble helt <b>${adjektiv.Ord8}</b> av den grove vitsen.</div><br>
             <button onclick="historieFire()">Neste side</button>
             `;
