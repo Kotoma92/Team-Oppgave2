@@ -21,22 +21,22 @@
             document.getElementById("app").innerHTML =/*html*/`
             <h3>Velkommen til Team 5 sin adjektiv historie!</h3>
             <div>Skriv inn adjektiv: </div>
-            <input type="text" oninput="adjektiv.Ord1 = this.value" value="${adjektiv.Ord1}"/>
-            <input type="text" oninput="adjektiv.Ord2 = this.value" value="${adjektiv.Ord2}"/>
-            <input type="text" oninput="adjektiv.Ord3 = this.value" value="${adjektiv.Ord3}"/>
-            <input type="text" oninput="adjektiv.Ord4 = this.value" value="${adjektiv.Ord4}"/>
-            <input type="text" oninput="adjektiv.Ord5 = this.value" value="${adjektiv.Ord5}"/>
-            <input type="text" oninput="adjektiv.Ord6 = this.value" value="${adjektiv.Ord6}"/>
-            <input type="text" oninput="adjektiv.Ord7 = this.value" value="${adjektiv.Ord7}"/>
-            <input type="text" oninput="adjektiv.Ord8 = this.value" value="${adjektiv.Ord8}"/>
-            <input type="text" oninput="adjektiv.Ord9 = this.value" value="${adjektiv.Ord9}"/>
-            <input type="text" oninput="adjektiv.Ord10 = this.value" value="${adjektiv.Ord10}"/>
-            <input type="text" oninput="adjektiv.Ord11 = this.value" value="${adjektiv.Ord11}"/>
-            <input type="text" oninput="adjektiv.Ord12 = this.value" value="${adjektiv.Ord12}"/>
-            <input type="text" oninput="adjektiv.Ord13 = this.value" value="${adjektiv.Ord13}"/>
-            <input type="text" oninput="adjektiv.Ord14 = this.value" value="${adjektiv.Ord14}"/>
-            <input type="text" oninput="adjektiv.Ord15 = this.value" value="${adjektiv.Ord15}"/>
-            <input type="text" oninput="adjektiv.Ord16 = this.value" value="${adjektiv.Ord16}"/>
+            <input type="text" onchange="erHistorieKlar()" oninput="adjektiv.Ord1 = this.value" value="${adjektiv.Ord1}"/>
+            <input type="text" onchange="erHistorieKlar()" oninput="adjektiv.Ord2 = this.value" value="${adjektiv.Ord2}"/>
+            <input type="text" onchange="erHistorieKlar()" oninput="adjektiv.Ord3 = this.value" value="${adjektiv.Ord3}"/>
+            <input type="text" onchange="erHistorieKlar()" oninput="adjektiv.Ord4 = this.value" value="${adjektiv.Ord4}"/>
+            <input type="text" onchange="erHistorieKlar()" oninput="adjektiv.Ord5 = this.value" value="${adjektiv.Ord5}"/>
+            <input type="text" onchange="erHistorieKlar()" oninput="adjektiv.Ord6 = this.value" value="${adjektiv.Ord6}"/>
+            <input type="text" onchange="erHistorieKlar()" oninput="adjektiv.Ord7 = this.value" value="${adjektiv.Ord7}"/>
+            <input type="text" onchange="erHistorieKlar()" oninput="adjektiv.Ord8 = this.value" value="${adjektiv.Ord8}"/>
+            <input type="text" onchange="erHistorieKlar()" oninput="adjektiv.Ord9 = this.value" value="${adjektiv.Ord9}"/>
+            <input type="text" onchange="erHistorieKlar()" oninput="adjektiv.Ord10 = this.value" value="${adjektiv.Ord10}"/>
+            <input type="text" onchange="erHistorieKlar()" oninput="adjektiv.Ord11 = this.value" value="${adjektiv.Ord11}"/>
+            <input type="text" onchange="erHistorieKlar()" oninput="adjektiv.Ord12 = this.value" value="${adjektiv.Ord12}"/>
+            <input type="text" onchange="erHistorieKlar()" oninput="adjektiv.Ord13 = this.value" value="${adjektiv.Ord13}"/>
+            <input type="text" onchange="erHistorieKlar()" oninput="adjektiv.Ord14 = this.value" value="${adjektiv.Ord14}"/>
+            <input type="text" onchange="erHistorieKlar()" oninput="adjektiv.Ord15 = this.value" value="${adjektiv.Ord15}"/>
+            <input type="text" onchange="erHistorieKlar()" oninput="adjektiv.Ord16 = this.value" value="${adjektiv.Ord16}"/>
             <input type="text" onchange="erHistorieKlar()" oninput="adjektiv.Ord17 = this.value" value="${adjektiv.Ord17}"/>
             <br>
             <button ${laasKnapp} onclick="fåHistorie()">Få historie</button>
@@ -120,6 +120,7 @@
                 adjektiv.Ord13 && adjektiv.Ord14 && adjektiv.Ord15 && adjektiv.Ord16 && adjektiv.Ord17) {
                 laasKnapp = '';
                 updateView();
+                return;
             } else {
                 return;
             }
